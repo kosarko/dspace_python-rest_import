@@ -29,11 +29,11 @@ if __name__ == '__main__':
 
     # find/create community by name
     community = repository.find_or_create_community('test community')
-    logging.debug(pformat(community.id))
+    logging.debug(pformat(community.id_))
 
     # find/create collection
     collection = community.find_or_create_collection('test collection')
-    logging.debug(pformat(collection.id))
+    logging.debug(pformat(collection.id_))
 
     # import items from the provided dir
     for subdir in os.listdir(os.path.abspath(items_dir)):
