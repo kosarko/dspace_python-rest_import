@@ -16,8 +16,8 @@ debug = os.environ.get('DEBUG', 'False') == 'True'
 
 if debug:
     logging.basicConfig(level=logging.DEBUG)
-    logging.info('Set log level to {0}'.format(logging.getLevelName(logging.getLogger(__name__)
-                                                                    .getEffectiveLevel())))
+    logging.info('Set log level to %s', logging.getLevelName(logging.getLogger(__name__)
+                                                             .getEffectiveLevel()))
 
 if __name__ == '__main__':
     items_dir = sys.argv[1]

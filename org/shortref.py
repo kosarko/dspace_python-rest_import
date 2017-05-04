@@ -1,3 +1,4 @@
+"""Classes to handle shortref"""
 import logging
 from pprint import pformat
 import requests
